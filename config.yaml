@@ -26,6 +26,8 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   hideMeta: false
+  assets:
+    disableFingerprinting: true
 
   # for enchanced SEO
   env: production
