@@ -1,7 +1,8 @@
-baseURL: "https://arkalim.org"
+baseURL: "https://eangutierrez.github.io/TonyG_Portfolio1/"
 languageCode: en-us
 title: Tony Gutierez
 theme: PaperMod
+canonifyURLs = true
 
 menu:
   main:
@@ -34,7 +35,7 @@ params:
     enabled: true
     title: "Tony Gutierrez"
     subtitle: Hello! I’m Tony, an **MBA** and **MIS** student at the University of Arizona. I bring a solid foundation in data analytics and project management, built by years of academic and professional experience. I am passionate about the entire data analysis process, from tidying dirty and unorganized data, to applying statistical analysis and data mining techniques, to building compelling data visualizations that help clients understand the meaning behind their data.  To enhance my expertise, I obtained the Google Data Analytics Professional Certificate, further bolstering my Excel, SQL, R Programming Language, and Tableau skills.  Moreover, I self-learned Python to consolidate my knowledge and to pursue my curiosity.  In my free time, I like to channel my creativity by learning new things, such as gardening and carpentry.
-    imageUrl: "home/Short_Photo.jpg"
+    imageUrl: "home/LinkedIn_Photo.jpg"
     imageWidth: 220
     imageHeight: 220
     # buttons:
