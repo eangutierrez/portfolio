@@ -6,7 +6,7 @@ draft: false
 tags: ['Data Analysis', 'Data Analytics', 'Data Validation', 'Foldering', 'Organization']
 weight: 102
 cover:
-    image: "/blog/part2/StockSnap.jpg"
+    image: "images/StockSnap.jpg"
 ---
 
 # Data Analysis Roadmap Step 2: Prepare

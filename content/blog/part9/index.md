@@ -6,7 +6,7 @@ draft: false
 tags: ['Data Analysis', 'Data Visualizations', 'Presentations', 'Solve Problems', 'Apply Insights']
 weight: 108
 cover:
-    image: "/blog/part9/viktor.jpg"
+    image: "images/viktor.jpg"
 ---
 
 # Data Analysis Process Stage 6: Act

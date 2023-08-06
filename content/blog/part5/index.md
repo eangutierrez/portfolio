@@ -6,7 +6,7 @@ draft: false
 tags: ['Data Analysis', 'Data Analytics', 'SQL', 'Pivot Tables', 'DBeaver']
 weight: 105
 cover:
-    image: "/blog/part5/unsplash.jpg"
+    image: "images/unsplash.jpg"
 ---
 
 # Data Analysis Process Stage 4: Analyze
@@ -17,17 +17,17 @@ Now that we have uploaded, cleaned, and processed our data, we are ready to anal
 
 In this section, we will carry out the previous data pre-processing task and data analysis steps using a more practical tool called Structured Query Language, or SQL. First, it is important to note that we went back to the raw, unprocessed data. We will run a code script to load all 12 CSV files into one SQL table.
 
-![SQL Script](/blog/part5/sql_table_1.PNG)
+![SQL Script](images/sql_table_1.PNG)
 
 # Preprocess Data
 
 We repeated lines 22 through 27 for the remaining CSV files to fill the table. Once the table contains all 2022 bike rental records, we ran the following script to tidy the data and prepare it for analysis.
 
-![SQL Script](/blog/part5/sql_table_2.PNG)
+![SQL Script](images/sql_table_2.PNG)
 
-![SQL Script](/blog/part5/sql_table_3.PNG)
+![SQL Script](images/sql_table_3.PNG)
 
-![SQL Script](/blog/part5/sql_table_4.PNG)
+![SQL Script](images/sql_table_4.PNG)
 
 # Benefits of SQL
 
@@ -35,9 +35,9 @@ SQL is much more flexible than Excel, and we can easily hide irrelevant informat
 
 SQL VIEWS allow us to keep the minimum number of columns in storage space to 13 to improve system performance. VIEWS can also help us protect the main database from accidents and can improve data literacy by giving more employees access to the data. The script below creates a VIEW that contains our base query query. The results are shown below.
 
-![SQL Script](/blog/part5/sql_table_5.PNG)
+![SQL Script](images/sql_table_5.PNG)
 
-![SQL Script](/blog/part5/sql_table_60.PNG)
+![SQL Script](images/sql_table_60.PNG)
 
 Just like when using Power Query Editor, the ride_length column helped identify incoherent data records, such as trips with negative or zero-minute ride lengths. Without a client to discuss the best way to handle these records, I decided to delete those rows from our analysis.
 
@@ -45,37 +45,37 @@ Just like when using Power Query Editor, the ride_length column helped identify 
 
 After creating our base query, my next step was to recreate the previously built spreadsheet pivot tables using SQL. The first table we created found the average ride length in minutes of casual users, members, and both groups combined.
 
-![SQL Script](/blog/part5/sql_table_70.PNG)
+![SQL Script](images/sql_table_70.PNG)
 
 The second table we created found the shortest bike ride in our data set, while the third showed the longest.
 
-![SQL Script](/blog/part5/sql_table_8.PNG)
+![SQL Script](images/sql_table_8.PNG)
 
-![SQL Script](/blog/part5/sql_table_9.PNG)
+![SQL Script](images/sql_table_9.PNG)
 
 The fourth table we created found the average ride length for our three user groups and filtered them by the days of the week.
 
-![SQL Script](/blog/part5/sql_table_100.PNG)
+![SQL Script](images/sql_table_100.PNG)
 
 The fifth table we created found the number of rides for our three user groups and filtered them by the days of the week. The fourth and fifth tables help us find our user riding habits based on the day of the week.
 
-![SQL Script](/blog/part5/sql_table_110.PNG)
+![SQL Script](images/sql_table_110.PNG)
 
 The sixth table we created counts the total number of users and divided their rides into three categories: short rides with a ride length of less than 10 minutes, medium rides with a ride length of between 10 and 20 minutes, and long rides of more than 20 minutes.
 
-![SQL Script](/blog/part5/sql_table_12.PNG)
+![SQL Script](images/sql_table_12.PNG)
 
 The seventh table we created found the number of rides for our three user groups and filtered them out by the month of the year.
 
-![SQL Script](/blog/part5/sql_table_13.PNG)
+![SQL Script](images/sql_table_13.PNG)
 
 The eight table we created found the top 10 most common rides in Chicago that year.
 
-![SQL Script](/blog/part5/sql_table_14.PNG)
+![SQL Script](images/sql_table_14.PNG)
 
 The last table we created found the number of rides for our three user groups and filtered them out by the hour of the day.
 
-![SQL Script](/blog/part5/sql_table_15.PNG)
+![SQL Script](images/sql_table_15.PNG)
 
 You can find a copy of the entire MySQL script on my [GitHub page](https://github.com/eangutierrez).
 

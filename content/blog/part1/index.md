@@ -6,7 +6,7 @@ draft: false
 tags: ['Data Analysis', 'Data Analytics', 'Scope']
 weight: 101
 cover:
-    image: "/blog/part1/logo.png"
+    image: "images/logo.png"
 ---
 
 # Introduction
@@ -56,9 +56,9 @@ Our main deliverables include:
 
 The last component of the Ask stage is to create a Scope of Work document. A good Scope of Work document is catered to the specific project and sets expectations and boundaries of an agreed upon outline of the work you’re going to perform on a project. You will find a copy of this document below:
 
-![Scope of Work Document Page One](/blog/part1/Scope_1.png)
+![Scope of Work Document Page One](images/Scope_1.png)
 
-![Scope of Work Document Page Two](/blog/part1/Scope_2.png)
+![Scope of Work Document Page Two](images/Scope_2.png)
 
 # Conclusion
 

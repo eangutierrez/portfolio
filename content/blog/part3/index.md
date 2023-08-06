@@ -6,7 +6,7 @@ draft: false
 tags: ['Data Analysis', 'Data Analytics', 'Data Preprocessing', 'Data Changelog', 'Tidy Data']
 weight: 103
 cover:
-    image: "/blog/part3/pexels.jpg"
+    image: "images/pexels.jpg"
 ---
 
 # Data Analysis Process Stage 3: Process
@@ -31,7 +31,7 @@ The 4th step is the clear formatting step, so I made sure the data set was organ
 
 The 9th step is to remove misspellings, so I performed a thorough search of the most commonly misspelled street names in the city. Finally, I made sure that all records in the dataset did not have inconsistent capitalization, incorrect punctuation, and other typos to complete the 12 stages of the Data Cleanup Workflow. The last task before analyzing the data is to record all these changes in the data changelog file.
 
-![Data Changelog](/blog/part3/changelog.PNG)
+![Data Changelog](images/changelog.PNG)
 
 # Conclusion
 

@@ -6,7 +6,7 @@ draft: false
 tags: ['Data Analysis', 'Data Analytics', 'Excel', 'Pivot Tables', 'Power Query Editor']
 weight: 104
 cover:
-    image: "/blog/part4/StockSnap.jpg"
+    image: "images/StockSnap.jpg"
 ---
 
 # Data Analysis Process Stage 4: Analyze
@@ -25,7 +25,7 @@ After connecting our clean data to a new spreadsheet, I created several pivot ta
 
 For the next two pivot tables, I added another layer of depth. First, I wanted to see how user types’ average ride lengths varied per day. Thus, I created a pivot table that shows user type on rows, day of the week on columns, and average ride length in each cell. Finally, I created a pivot table that explores the same dimensions as the previous pivot table, but this time, looks at the total number of rides in each cell. The picture below shows what these pivot tables look like.
 
-![Excel Tables](/blog/part4/pivot_tables.png)
+![Excel Tables](images/pivot_tables.png)
 
 # Conclusion
 
