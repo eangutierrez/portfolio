@@ -2,7 +2,7 @@ baseURL: "https://eangutierrez.github.io/portfolio/"
 languageCode: en-us
 title: Tony Gutierez
 theme: PaperMod
-canonifyURLs = true
+canonifyURLs: true
 
 menu:
   main:
