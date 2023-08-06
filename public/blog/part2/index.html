@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Cyclistic Bike-Share Business Case Part Two: Preparation | Tony Gutierez</title>
+<meta name="keywords" content="Data Analysis, Data Analytics, Data Validation, Foldering, Organization">
+<meta name="description" content="Data Analysis Roadmap Step 2: Prepare">
+<meta name="author" content="">
+<link rel="canonical" href="https://eangutierrez.github.io/portfolio/blog/part2/">
+<link crossorigin="anonymous" href="/portfolio/assets/css/stylesheet.min.10a282b8c02221f2cd75bb82206faf344b93de98ff138d0eb350d8a0efdfa4a4.css" integrity="sha256-EKKCuMAiIfLNdbuCIG&#43;vNEuT3pj/E40Os1DYoO/fpKQ=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/portfolio/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://eangutierrez.github.io/portfolio/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://eangutierrez.github.io/portfolio/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://eangutierrez.github.io/portfolio/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://eangutierrez.github.io/portfolio/apple-touch-icon.png">
+<link rel="mask-icon" href="https://eangutierrez.github.io/portfolio/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Cyclistic Bike-Share Business Case Part Two: Preparation" />
+<meta property="og:description" content="Data Analysis Roadmap Step 2: Prepare" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://eangutierrez.github.io/portfolio/blog/part2/" />
+<meta property="og:image" content="https://eangutierrez.github.io/blog/part2/StockSnap.jpg" /><meta property="article:section" content="blog" />
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://eangutierrez.github.io/blog/part2/StockSnap.jpg" />
+<meta name="twitter:title" content="Cyclistic Bike-Share Business Case Part Two: Preparation"/>
+<meta name="twitter:description" content="Data Analysis Roadmap Step 2: Prepare"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://eangutierrez.github.io/portfolio/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Cyclistic Bike-Share Business Case Part Two: Preparation",
+      "item": "https://eangutierrez.github.io/portfolio/blog/part2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Cyclistic Bike-Share Business Case Part Two: Preparation",
+  "name": "Cyclistic Bike-Share Business Case Part Two: Preparation",
+  "description": "Data Analysis Roadmap Step 2: Prepare",
+  "keywords": [
+    "Data Analysis", "Data Analytics", "Data Validation", "Foldering", "Organization"
+  ],
+  "articleBody": "Data Analysis Roadmap Step 2: Prepare In the Prepare Stage, we must decide what data we need to collect in order to answer all stakeholder questions. We must also decide how to organize the data to maximize its utility. By focusing on what metrics to measure, as well as the security measures to implement, we will successfully complete this stage.\nCookiecutter Data Science Foldering Because all the data is provided for us, we should focus on the proper storage and security measures to implement. Using proper foldering techniques is important when working in teams, as this proper organization will minimize lost time. Using the Cookiecutter Data Science template on Github as a template, I created a Cyclistic_Bike_Share project folder with the following folders:\ndata (where the project’s data will be stored)\n- external (data found externally is stored here)\n- interim (data currently being analyzed is here)\n- processed (the fully cleaned data is here)\n- raw (the unprocessed data is here) docs models (any trained and serialized models are stored here) notebooks (any notebook files, such as Jupyter notebooks, are stored here) references (any data dictionaries, manual, and explanatory materials are stored here) reports (any HTML, PDF, or other generated analysis reports are stored here)\n- figures (any pgn, jpeg, or other data visualization files are stored here) scripts (any RStudio scripts are stored here) src (any source code for this project is stored here) Data Changelog File Another important aspect of the preparation stage is making a Data Changelog file. It is paramount to create and properly use a Data Changelog file, as this file is an explanation of all the notable changes to this data set. This file will be useful for our team to collaborate, keep track of all updates, and ensure all future insights are legitimate.\nBefore we look at the data, we must establish that the data’s integrity is intact. Only a data set that is reliable, original, comprehensive, current, and cited can be used for analysis, as it helps the client make business decisions based on accurate information. The original, current Cyclistic Bike-Share data was provided by the client, and since we cannot communicate with them to confirm that the data is free from sample biases that do not properly represent the population, human error, and other integral issues, I am making the assumption that the data is fit for analysis. In a real-life scenario, we would hold a meeting with the client to ensure that the data is credible and free of bias. To do so, we would go over the six main areas of data validation\nThe Six Pillars of Data Validation Data Type: ascertain the data matches the data type defined for each field Data Range: ascertain the data falls within an acceptable range of values defined for each field Data Constraints: ascertain the data meets proper input criteria Data Consistency: ascertain the data makes sense in the context of other related data Data Structure: ascertain the data follows a set structure Code Validation: ascertain the application code systematically performs all validations mentioned above. Client Privacy and Data License Agreement The Cyclistic Bike-Share data is available at: https://divvy-tripdata.s3.amazonaws.com/index.html. To protect the client’s privacy and security, we are saving and encrypting the documents on a password-protected computer. Additionally, we will delete any potential personal identifiable information so that customers are unidentifiable and remain anonymous. Finally, I will adhere to all the terms and conditions granted under this data set’s Data License Agreement.\nConclusion With all of these measures taken, we are ready to move to the third stage of the data analysis process: the Process Stage.\nReference: i Google Data Analytics Professional Certificate. (n.d.). Types of Data Validation. Coursera. [https://www.coursera.org/learn/analyze-data/supplement/tQAED/types-of-data-validation]\nImage Credits Image Courtesy of: Ian Livesey\n",
+  "wordCount" : "626",
+  "inLanguage": "en",
+  "image":"https://eangutierrez.github.io/blog/part2/StockSnap.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://eangutierrez.github.io/portfolio/blog/part2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tony Gutierez",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://eangutierrez.github.io/portfolio/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://eangutierrez.github.io/portfolio/" accesskey="h" title="Tony Gutierez (Alt + H)">Tony Gutierez</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://eangutierrez.github.io/portfolio/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://eangutierrez.github.io/portfolio/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://eangutierrez.github.io/portfolio/projects" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://eangutierrez.github.io/portfolio/">Home</a>&nbsp;»&nbsp;<a href="https://eangutierrez.github.io/portfolio/blog/">Blogs</a></div>
+    <h1 class="post-title">
+      Cyclistic Bike-Share Business Case Part Two: Preparation
+    </h1>
+    <div class="post-description">
+      Data Analysis Roadmap Step 2: Prepare
+    </div>
+    <div class="post-meta">
+
+
+May 2023
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="lazy" src="https://eangutierrez.github.io/blog/part2/StockSnap.jpg" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">‎ Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#data-analysis-roadmap-step-2-prepare" aria-label="Data Analysis Roadmap Step 2: Prepare">Data Analysis Roadmap Step 2: Prepare</a></li>
+                <li>
+                    <a href="#cookiecutter-data-science-foldering" aria-label="Cookiecutter Data Science Foldering">Cookiecutter Data Science Foldering</a></li>
+                <li>
+                    <a href="#data-changelog-file" aria-label="Data Changelog File">Data Changelog File</a></li>
+                <li>
+                    <a href="#the-six-pillars-of-data-validation" aria-label="The Six Pillars of Data Validation">The Six Pillars of Data Validation</a></li>
+                <li>
+                    <a href="#client-privacy-and-data-license-agreement" aria-label="Client Privacy and Data License Agreement">Client Privacy and Data License Agreement</a></li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a></li>
+                <li>
+                    <a href="#reference" aria-label="Reference:">Reference:</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#image-credits" aria-label="Image Credits">Image Credits</a>
+                </li>
+            </ul>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="data-analysis-roadmap-step-2-prepare">Data Analysis Roadmap Step 2: Prepare<a hidden class="anchor" aria-hidden="true" href="#data-analysis-roadmap-step-2-prepare">#</a></h1>
+<p>In the Prepare Stage, we must decide what data we need to collect in order to answer all stakeholder questions. We must also decide how to organize the data to maximize its utility. By focusing on what metrics to measure, as well as the security measures to implement, we will successfully complete this stage.</p>
+<h1 id="cookiecutter-data-science-foldering">Cookiecutter Data Science Foldering<a hidden class="anchor" aria-hidden="true" href="#cookiecutter-data-science-foldering">#</a></h1>
+<p>Because all the data is provided for us, we should focus on the proper storage and security measures to implement. Using proper foldering techniques is important when working in teams, as this proper organization will minimize lost time. Using the Cookiecutter Data Science template on <a href="https://drivendata.github.io/cookiecutter-data-science/">Github</a> as a template, I created a Cyclistic_Bike_Share project folder with the following folders:</p>
+<ul>
+<li><strong>data</strong> (where the project’s data will be stored)<br>
+- <strong>external</strong> (data found externally is stored here)<br>
+- <strong>interim</strong> (data currently being analyzed is here)<br>
+- <strong>processed</strong> (the fully cleaned data is here)<br>
+- <strong>raw</strong> (the unprocessed data is here)</li>
+<li><strong>docs</strong></li>
+<li><strong>models</strong> (any trained and serialized models are stored here)</li>
+<li><strong>notebooks</strong> (any notebook files, such as Jupyter notebooks, are stored here)</li>
+<li><strong>references</strong> (any data dictionaries, manual, and explanatory materials are stored here)</li>
+<li><strong>reports</strong> (any HTML, PDF, or other generated analysis reports are stored here)<br>
+- <strong>figures</strong> (any pgn, jpeg, or other data visualization files are stored here)</li>
+<li><strong>scripts</strong> (any RStudio scripts are stored here)</li>
+<li><strong>src</strong> (any source code for this project is stored here)</li>
+</ul>
+<h1 id="data-changelog-file">Data Changelog File<a hidden class="anchor" aria-hidden="true" href="#data-changelog-file">#</a></h1>
+<p>Another important aspect of the preparation stage is making a Data Changelog file. It is paramount to create and properly use a Data Changelog file, as this file is an explanation of all the notable changes to this data set. This file will be useful for our team to collaborate, keep track of all updates, and ensure all future insights are legitimate.</p>
+<p>Before we look at the data, we must establish that the data’s integrity is intact. Only a data set that is reliable, original, comprehensive, current, and cited can be used for analysis, as it helps the client make business decisions based on accurate information. The original, current Cyclistic Bike-Share data was provided by the client, and since we cannot communicate with them to confirm that the data is free from sample biases that do not properly represent the population, human error, and other integral issues, I am making the assumption that the data is fit for analysis. In a real-life scenario, we would hold a meeting with the client to ensure that the data is credible and free of bias. To do so, we would go over the six main areas of data validation</p>
+<h1 id="the-six-pillars-of-data-validation">The Six Pillars of Data Validation<a hidden class="anchor" aria-hidden="true" href="#the-six-pillars-of-data-validation">#</a></h1>
+<ul>
+<li><strong>Data Type</strong>: ascertain the data matches the data type defined for each field</li>
+<li><strong>Data Range</strong>: ascertain the data falls within an acceptable range of values defined for each field</li>
+<li><strong>Data</strong> <strong>Constraints</strong>: ascertain the data meets proper input criteria</li>
+<li><strong>Data Consistency</strong>: ascertain the data makes sense in the context of other related data</li>
+<li><strong>Data Structure</strong>: ascertain the data follows a set structure</li>
+<li><strong>Code Validation</strong>: ascertain the application code systematically performs all validations mentioned above.</li>
+</ul>
+<h1 id="client-privacy-and-data-license-agreement">Client Privacy and Data License Agreement<a hidden class="anchor" aria-hidden="true" href="#client-privacy-and-data-license-agreement">#</a></h1>
+<p>The Cyclistic Bike-Share data is available at: <a href="https://divvy-tripdata.s3.amazonaws.com/index.html">https://divvy-tripdata.s3.amazonaws.com/index.html</a>. To protect the client’s privacy and security, we are saving and encrypting the documents on a password-protected computer. Additionally, we will delete any potential personal identifiable information so that customers are unidentifiable and remain anonymous. Finally, I will adhere to all the terms and conditions granted under this data set’s <a href="https://ride.divvybikes.com/data-license-agreement">Data License Agreement</a>.</p>
+<h1 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h1>
+<p>With all of these measures taken, we are ready to move to the third stage of the data analysis process: the Process Stage.</p>
+<h1 id="reference">Reference:<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h1>
+<p>i Google Data Analytics Professional Certificate. (n.d.). <em>Types of Data Validation</em>. Coursera. [https://www.coursera.org/learn/analyze-data/supplement/tQAED/types-of-data-validation]</p>
+<h3 id="image-credits">Image Credits<a hidden class="anchor" aria-hidden="true" href="#image-credits">#</a></h3>
+<p>Image Courtesy of: Ian Livesey</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://eangutierrez.github.io/portfolio/tags/data-analysis/">Data Analysis</a></li>
+      <li><a href="https://eangutierrez.github.io/portfolio/tags/data-analytics/">Data Analytics</a></li>
+      <li><a href="https://eangutierrez.github.io/portfolio/tags/data-validation/">Data Validation</a></li>
+      <li><a href="https://eangutierrez.github.io/portfolio/tags/foldering/">Foldering</a></li>
+      <li><a href="https://eangutierrez.github.io/portfolio/tags/organization/">Organization</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://eangutierrez.github.io/portfolio/">Tony Gutierez</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

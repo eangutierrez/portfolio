@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jupyter Lab on Tony Gutierez</title>
+    <link>https://eangutierrez.github.io/portfolio/tags/jupyter-lab/</link>
+    <description>Recent content in Jupyter Lab on Tony Gutierez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://eangutierrez.github.io/portfolio/tags/jupyter-lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Crash Course Exercises</title>
+      <link>https://eangutierrez.github.io/portfolio/projects/project_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/projects/project_3/</guid>
+      <description>My answers to the exercises on Python Crash Course, 2nd Edition by Eric Matthes</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Seven: Python</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part7/</guid>
+      <description>Data Analysis Roadmap Step 4D: Analyze (Jupyter Lab, Python)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tony Gutierez</title>
+    <link>https://eangutierrez.github.io/portfolio/</link>
+    <description>Recent content on Tony Gutierez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://eangutierrez.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyclistic Bike Share</title>
+      <link>https://eangutierrez.github.io/portfolio/projects/project_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/projects/project_1/</guid>
+      <description>Google Data Analytics Professional Certificate Capstone Project</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part One: Introduction and Scope of Work</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part1/</guid>
+      <description>Data Analysis Roadmap Step 1: Ask</description>
+    </item>
+    
+    <item>
+      <title>Sakila Database Practice Queries</title>
+      <link>https://eangutierrez.github.io/portfolio/projects/project_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/projects/project_2/</guid>
+      <description>Queries Learned While Studying Learning SQL Third Edition by Alan Beaulieu</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Two: Preparation</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part2/</guid>
+      <description>Data Analysis Roadmap Step 2: Prepare</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Three: Data Preprocessing</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part3/</guid>
+      <description>Data Analysis Roadmap Step 3: Process</description>
+    </item>
+    
+    <item>
+      <title>Python Crash Course Exercises</title>
+      <link>https://eangutierrez.github.io/portfolio/projects/project_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/projects/project_3/</guid>
+      <description>My answers to the exercises on Python Crash Course, 2nd Edition by Eric Matthes</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Four: Excel Analysis</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part4/</guid>
+      <description>Data Analysis Roadmap Step 4A: Analyze (Excel, Power Query Editor)</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Five: SQL Analysis</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part5/</guid>
+      <description>Data Analysis Roadmap Step 4B: Analyze (SQL)</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Six: RStudio Analysis</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part6/</guid>
+      <description>Data Analysis Roadmap Step 4C: Analyze (RStudio, R Programming Language)</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Seven: Python</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part7/</guid>
+      <description>Data Analysis Roadmap Step 4D: Analyze (Jupyter Lab, Python)</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Eight: Tableau Visualizations</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part8/</guid>
+      <description>Data Analysis Roadmap Step 5: Share</description>
+    </item>
+    
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Nine: Stakeholder Recommendations</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part9/</guid>
+      <description>Data Analysis Roadmap Step 6: Act</description>
+    </item>
+    
+    
+  </channel>
+</rss>

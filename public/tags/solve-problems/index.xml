@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Solve Problems on Tony Gutierez</title>
+    <link>https://eangutierrez.github.io/portfolio/tags/solve-problems/</link>
+    <description>Recent content in Solve Problems on Tony Gutierez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://eangutierrez.github.io/portfolio/tags/solve-problems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyclistic Bike-Share Business Case Part Nine: Stakeholder Recommendations</title>
+      <link>https://eangutierrez.github.io/portfolio/blog/part9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/blog/part9/</guid>
+      <description>Data Analysis Roadmap Step 6: Act</description>
+    </item>
+    
+  </channel>
+</rss>
