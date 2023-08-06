@@ -1,6 +1,6 @@
 baseURL: "https://arkalim.org"
 languageCode: en-us
-title: Abdur Rahman
+title: Tony Gutierez
 theme: PaperMod
 
 menu:
@@ -17,22 +17,6 @@ menu:
       name: Projects
       url: /projects
       weight: 30
-    - identifier: experience
-      name: Experience
-      url: /experience
-      weight: 40
-    - identifier: search
-      name: Search
-      url: /search
-      weight: 50
-    # - identifier: tags
-    #   name: Tags
-    #   url: /tags
-    #   weight: 60
-    # - identifier: notes
-    #   name: Notes
-    #   url: https://notes.arkalim.org
-    #   weight: 70
 
 params:
   # theme
@@ -48,9 +32,9 @@ params:
   # Home Page
   profileMode:
     enabled: true
-    title: "Abdur Rahman"
-    subtitle: Hi 👋! I'm Abdur, an ambitious DevOps Intern at [**16Bit.ai**](https://www.16bit.ai), an innovative healthcare startup in Toronto. Currently pursuing my [**MSc in Applied Computing**](https://mscac.utoronto.ca/) at the esteemed University of Toronto, I bring a solid foundation in Software Engineering with professional experience. I am captivated by the realm of Cloud Computing and DevOps practices, seeking to revolutionize how we deploy applications in the modern era. To enhance my expertise, I have also obtained AWS associate-level certifications as a Solutions Architect and Developer, further bolstering my skills in the cloud computing domain. My unwavering curiosity and drive push me to explore fresh avenues to redefine technological frontiers. During my leisure hours, I channel my creativity into crafting engaging YouTube 🎬 videos, where I share my journey as an international student in Canada 🇨🇦.
-    imageUrl: "home/formal-pic-small.jpeg"
+    title: "Tony Gutierrez"
+    subtitle: Hello! I’m Tony, an **MBA** and **MIS** student at the University of Arizona. I bring a solid foundation in data analytics and project management, built by years of academic and professional experience. I am passionate about the entire data analysis process, from tidying dirty and unorganized data, to applying statistical analysis and data mining techniques, to building compelling data visualizations that help clients understand the meaning behind their data.  To enhance my expertise, I obtained the Google Data Analytics Professional Certificate, further bolstering my Excel, SQL, R Programming Language, and Tableau skills.  Moreover, I self-learned Python to consolidate my knowledge and to pursue my curiosity.  In my free time, I like to channel my creativity by learning new things, such as gardening and carpentry.
+    imageUrl: "home/Short_Photo.jpg"
     imageWidth: 220
     imageHeight: 220
     # buttons:
@@ -67,15 +51,17 @@ params:
 
   socialIcons:
     - name: "email"
-      url: "mailto:abdur.rahman.kalim@gmail.com"
+      url: "mailto:tonygutierrez@arizona.edu"
     - name: "linkedin"
-      url: "https://www.linkedin.com/in/abdurrahmankalim"
+      url: "https://www.linkedin.com/in/eangutierrez/"
     - name: "github"
-      url: "https://github.com/arkalim"
-    - name: "youtube"
-      url: "https://www.youtube.com/c/AbdurRahmanKalim"
+      url: "https://github.com/eangutierrez"
+    - name: "tableau public"
+      url: "https://public.tableau.com/app/profile/tony.gutierrez"
+    - name: "medium"
+      url: "https://medium.com/@tonygutierrez_60520"
     - name: "cv"
-      url: "https://drive.google.com/file/d/1U6Gg2RnHSCthtWLbZJBlAEI3V1WGjZty/view"
+      url: "https://drive.google.com/file/d/1CyiCqVQzENHBnYNQSgfMOuE7KursQ9qb/view?usp=drive_link"
 
   # text search
   fuseOpts:

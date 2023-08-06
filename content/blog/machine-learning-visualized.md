@@ -2,7 +2,7 @@
 title: "Machine Learning - Visualized"
 description: "A visual approach to understand machine learning"
 dateString: August 2020
-draft: false
+draft: true
 tags: ["ML", "AI", "Python", "Visualization"]
 weight: 105
 cover:
