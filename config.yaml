@@ -61,7 +61,7 @@ params:
     - name: "medium"
       url: "https://medium.com/@tonygutierrez_60520"
     - name: "cv"
-      url: "https://docs.google.com/document/d/1VHYy5qymFdBTH8E5v-TtUyUptE9mXe43FFq1eXKj5Z0/edit?usp=sharing"
+      url: "https://rb.gy/kh9mj"
 
   # text search
   fuseOpts:

@@ -25,12 +25,12 @@
     </item>
     
     <item>
-      <title>Sakila Database Practice Queries</title>
+      <title>8 Week SQL Challenge</title>
       <link>https://eangutierrez.github.io/portfolio/projects/project_2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://eangutierrez.github.io/portfolio/projects/project_2/</guid>
-      <description>Queries Learned While Studying Learning SQL Third Edition by Alan Beaulieu</description>
+      <description>Danny Ma&amp;#39;s 8-Week SQL Challenge Case Studies</description>
     </item>
     
     <item>
@@ -49,6 +49,15 @@
       
       <guid>https://eangutierrez.github.io/portfolio/blog/part3/</guid>
       <description>Data Analysis Roadmap Step 3: Process</description>
+    </item>
+    
+    <item>
+      <title>Sakila Database Practice Queries</title>
+      <link>https://eangutierrez.github.io/portfolio/projects/project_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eangutierrez.github.io/portfolio/projects/project_3/</guid>
+      <description>Queries Learned While Studying Learning SQL Third Edition by Alan Beaulieu</description>
     </item>
     
     <item>

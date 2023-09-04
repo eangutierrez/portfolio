@@ -60,12 +60,12 @@
 <meta property="og:description" content="Data Analysis Roadmap Step 4A: Analyze (Excel, Power Query Editor)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://eangutierrez.github.io/portfolio/blog/part4/" />
-<meta property="og:image" content="https://eangutierrez.github.io/blog/part4/StockSnap.jpg" /><meta property="article:section" content="blog" />
+<meta property="og:image" content="https://eangutierrez.github.io/portfolio/images/StockSnap.jpg" /><meta property="article:section" content="blog" />
 
 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://eangutierrez.github.io/blog/part4/StockSnap.jpg" />
+<meta name="twitter:image" content="https://eangutierrez.github.io/portfolio/images/StockSnap.jpg" />
 <meta name="twitter:title" content="Cyclistic Bike-Share Business Case Part Four: Excel Analysis"/>
 <meta name="twitter:description" content="Data Analysis Roadmap Step 4A: Analyze (Excel, Power Query Editor)"/>
 
@@ -103,7 +103,7 @@
   "articleBody": "Data Analysis Process Stage 4: Analyze Now that we have uploaded, cleaned, and processed our data, we are ready to analyze and find key insights to help Cyclistic better understand their customers. In the Analyze stage, we use tools to format and transform, sort, and filter the data to find patterns and draw conclusions. We can make predictions and recommendation to help our stakeholders make data-informed decisions.\nPower Query Editor With a validated and clean data set in hand, we are ready to start the data analysis stage. For the sake of following this case study’s rules, I continued to use Excel’s Power Query Editor tool to manipulate the data.\nFirst, I added a column that contains the length of each ride, which was calculated by subtracting the ride’s start time from the end time. The ride_length column helped identify incoherent data records, such as trips with negative ride lengths, or canceled rides with a ride length of zero minutes. Without a client to discuss the best way to handle these records, I decided to filter them out of our analysis. Additionally, I created a column that states the day of the week the ride took place by using the Date.DayofWeek function. This was done to provide a deeper dimension to our analysis. This step concludes our work in the Power Query Editor.\nBuilding Pivot Tables After connecting our clean data to a new spreadsheet, I created several pivot tables to conduct some prescriptive analysis and to get a better idea of what the data looks like. First, I created a pivot table that describes the average ride length for casual users, subscribed members, and overall users. The pivot table shows that casual users ride for longer periods of time than member users. Next, I created two pivot tables to show the minimum and maximum ride lengths in 2022. These pivot tables show that our shortest ride was one minute, while our longest ride was close to ten hours!\nFor the next two pivot tables, I added another layer of depth. First, I wanted to see how user types’ average ride lengths varied per day. Thus, I created a pivot table that shows user type on rows, day of the week on columns, and average ride length in each cell. Finally, I created a pivot table that explores the same dimensions as the previous pivot table, but this time, looks at the total number of rides in each cell. The picture below shows what these pivot tables look like.\nConclusion This concludes the use of Microsoft Excel as a data analysis tool. Although the process and analyze stages were successful, they were not as effective as possible. This is because more suitable tools like SQL and R were not used. In the next section, I will show how to complete the previous two phases using SQL in MySQL Workbench, DBeaver, and Visual Studio Code for SQL.\nImage Credits Image Courtesy of: Wilfred Iven\n",
   "wordCount" : "493",
   "inLanguage": "en",
-  "image":"https://eangutierrez.github.io/blog/part4/StockSnap.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "image":"https://eangutierrez.github.io/portfolio/images/StockSnap.jpg","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -197,7 +197,10 @@ May 2023
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="lazy" src="https://eangutierrez.github.io/blog/part4/StockSnap.jpg" alt="">
+<figure class="entry-cover">
+        <img loading="lazy" srcset="https://eangutierrez.github.io/portfolio/blog/part4/images/StockSnap_hu4772e7764a707b98550d98f29254f662_2126023_360x0_resize_q75_box.jpg 360w ,https://eangutierrez.github.io/portfolio/blog/part4/images/StockSnap_hu4772e7764a707b98550d98f29254f662_2126023_480x0_resize_q75_box.jpg 480w ,https://eangutierrez.github.io/portfolio/blog/part4/images/StockSnap_hu4772e7764a707b98550d98f29254f662_2126023_720x0_resize_q75_box.jpg 720w ,https://eangutierrez.github.io/portfolio/blog/part4/images/StockSnap_hu4772e7764a707b98550d98f29254f662_2126023_1080x0_resize_q75_box.jpg 1080w ,https://eangutierrez.github.io/portfolio/blog/part4/images/StockSnap_hu4772e7764a707b98550d98f29254f662_2126023_1500x0_resize_q75_box.jpg 1500w ,https://eangutierrez.github.io/portfolio/blog/part4/images/StockSnap.jpg 3785w" 
+            sizes="(min-width: 768px) 720px, 100vw" src="https://eangutierrez.github.io/portfolio/blog/part4/images/StockSnap.jpg" alt="" 
+            width="3785" height="2514">
         
 </figure><div class="toc">
     <details >
@@ -235,7 +238,7 @@ May 2023
 <h1 id="building-pivot-tables">Building Pivot Tables<a hidden class="anchor" aria-hidden="true" href="#building-pivot-tables">#</a></h1>
 <p>After connecting our clean data to a new spreadsheet, I created several pivot tables to conduct some prescriptive analysis and to get a better idea of what the data looks like. First, I created a pivot table that describes the average ride length for casual users, subscribed members, and overall users. The pivot table shows that casual users ride for longer periods of time than member users. Next, I created two pivot tables to show the minimum and maximum ride lengths in 2022. These pivot tables show that our shortest ride was one minute, while our longest ride was close to ten hours!</p>
 <p>For the next two pivot tables, I added another layer of depth. First, I wanted to see how user types’ average ride lengths varied per day. Thus, I created a pivot table that shows user type on rows, day of the week on columns, and average ride length in each cell. Finally, I created a pivot table that explores the same dimensions as the previous pivot table, but this time, looks at the total number of rides in each cell. The picture below shows what these pivot tables look like.</p>
-<p><img loading="lazy" src="/blog/part4/pivot_tables.png" alt="Excel Tables"  />
+<p><img loading="lazy" src="images/pivot_tables.png" alt="Excel Tables"  />
 </p>
 <h1 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h1>
 <p>This concludes the use of Microsoft Excel as a data analysis tool. Although the process and analyze stages were successful, they were not as effective as possible. This is because more suitable tools like SQL and R were not used. In the next section, I will show how to complete the previous two phases using SQL in MySQL Workbench, DBeaver, and Visual Studio Code for SQL.</p>

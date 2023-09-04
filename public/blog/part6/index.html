@@ -60,12 +60,12 @@
 <meta property="og:description" content="Data Analysis Roadmap Step 4C: Analyze (RStudio, R Programming Language)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://eangutierrez.github.io/portfolio/blog/part6/" />
-<meta property="og:image" content="https://eangutierrez.github.io/blog/part6/r_table_9.png" /><meta property="article:section" content="blog" />
+<meta property="og:image" content="https://eangutierrez.github.io/portfolio/images/r_table_9.png" /><meta property="article:section" content="blog" />
 
 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://eangutierrez.github.io/blog/part6/r_table_9.png" />
+<meta name="twitter:image" content="https://eangutierrez.github.io/portfolio/images/r_table_9.png" />
 <meta name="twitter:title" content="Cyclistic Bike-Share Business Case Part Six: RStudio Analysis"/>
 <meta name="twitter:description" content="Data Analysis Roadmap Step 4C: Analyze (RStudio, R Programming Language)"/>
 
@@ -103,7 +103,7 @@
   "articleBody": "Build RStudio Data Frame In this section, we will carry out the previous data pre-processing and data analysis steps using a more practical tool called the R programming language. First, it is important to note that we went back to the raw, unprocessed data. We will run a code script to load all 12 CSV files into one R data frame.\nPreprocess Data in R Once the data frame contains all 20222 bike rental records, we ran the following script to tidy the data and prepare it for analysis\nBenefits of R R is much faster than SQL because it loads the data on RAM instead of a hard disk. That means that we can add a column for the day of the week the ride took place, and the ride duration in minutes without losing performance.\nR is so powerful that we can easily recreate the previously built pivot tables using R code. Note that the numbers there is a tiny variation in the numbers depending on the tool that was used to analyze the data. This is because each tool has its own built logic when it approaches borderline cases. At this time, any data analyst would like to discuss these small discrepancies with the company’s data engineers and with the client to come up with a sensible solution. Because this is a capstone project and the client does not exist, we must take account of that phenomenon whenever it occurs in the real world. We will continue our analysis for now and further analyze the data.\nData Visualizations in R One of the most powerful aspects of R is that we can create powerful visualizations to convey useful facts about our data. It’s hard for people to understand the scale of our data, or discern key variables from looking at pivot tables. However, we can use that information to build striking visualizations that highlight what truly matters. For example, it can be intimidating to look at table seven, where we broke down the number of rides per user type per month. Which months have the highest number of rides? Are there seasons where the users choose other methods of transportation? And what type of users use the bikes more each month? Our pivot table has all of that information, but it is hard for management to find the answer. Let’s use that data to create a visualization that answers these questions.\nNumber of Rides for 2022 per User Group This is a powerful visualization because it easily shows answers to our questions. First, a big portion of our users rent bikes from May through October. This makes sense because we know that Chicago has wonderful climate on those months. Second, it seems that the usage rate of our bikes dramatically decreases on January, February, and December. It’s important to point out that our member users, in green, continue to ride at a higher rate than the casual users, in red. Third, the member users outperform the casual users throughout the entire year. The data shows that the member users rent the bikes more, so there is an incentive for Cyclistic to apply marketing strategies to convert casual users to member users, especially during peak riding season, to convert casual users to members and maximize profit.\nRide Distribution Over Two Categories Another powerful visualization is a variable tree that shows the data frame nested into subsets. Variable trees are useful to identify patterns in our data. Using the type of user on the first layer, our data is nested into two subsets: the casual user and the member user. This layer shows that 60% of our users are subscribers, and 40% of the users are casual users. Adding the type of bike as a second layer creates additional subsets. Of the member users, 66% use classic bikes, and 34% use electric bikes. Additionally, of the casual users, 51 % use classic bikes, 39% use electric bikes, and 10% use docked bikes. As we are dealing with a business case, we cannot raise concerns to our client, but in the real world, we should discuss with our clients whether the docked bike type should be changed to another type of bike, or whether it should be filtered from our analysis.\nWe can draw two conclusions from this visualization:\n· Member users do not use docked bikes.\n· Both casual and member users prefer classic bikes.\nDistribution of Rides per Minute We can also build a histogram to look at the frequency distribution of bike rides per ride length:\nWe can draw two conclusions from this visualization:\n· The vast majority of the rides have a ride length of less than 10 minutes.\n· Rides longer than ~ 25 minutes have a frequency of less than 50 K rides.\nBecause the majority of rides have a ride length of less than 10 minutes, it could mean that the bikes are rented with a specific objective in mind, such as commuting to work, or getting groceries, instead of riding for leisure.\nNumber of Rides per Day of the Week We can also build a bar graph that divides the rides per day of the week to find additional user preferences:\nWe can draw two conclusions from this visualization:\n· Member users use bikes throughout the entire week, but there is a decrease in use on weekends.\n· On weekends, casual users ride more. There are about + 100 K bike rides on Saturday, and about + 50 K more rides on Sunday.\nBecause there is an increase of casual users on weekends, Cyclistic Bike-Share could capitalize by running marketing promotions to target user conversion and promote user growth.\nNumber of Rides per Hour of the Day We can also build a heat map that looks at the day of the week and the hour of the day to find the times our users prefer to ride bikes:\nWe can draw several conclusions from this visualization:\n· From Tuesday through Friday, the most popular use of bikes is for commutes from 6:00 am to 8:00 am, and from 4:00 pm to 6:00 pm.\n· On Saturday, the most popular use of bikes is from the hours of 7:00 am to 8:00 am, and from 3:00 pm to 6:00 pm.\n· On Sunday, the most popular use of bikes is from the hours of 9:00 am to 6:00 pm.\nKnowing the most popular times of use is very useful for the marketing team. Cyclistic Bike-Share could capitalize by running marketing promotions to offer discounts in non-popular hours to promote bike usage, or increase the prices during popular hours if bike demand overtakes supply.\nBuild Pie Charts if Requested We can also build visualizations that compare usage among groups of users. Although there are better ways to visualize this information, some clients may prefer pie charts, and the team built this to be prepared in this case:\nWe can draw two conclusions from this visualization:\n· Both casual and member users rent bikes mainly on weekdays.\n· Casual users use bikes on weekends at a higher rate than member users.\nBuild Maps Showing Popular Routes Finally, we can create a visualization of a map that contains the most popular routes by both member and casual users:\nWe can draw several conclusions from these visualization:\n· Member users are more spread throughout the area.\n· Many casual riders start from the Chicago Harbor.\n· It seems that member users have shorter trips than casual users. This lines up with our previous assessment that casual users ride for leisure, while member users ride with a purpose.\nCyclistic Bike-Share can take advantage of this opportunity by placing ads to promote user conversion near the Chicago Harbor area, while also assessing proper inventory levels to keep up with demand.\nYou can find a copy of the entire R script on my GitHub page.\nConclusion These visualizations are a good starting point for creating a stakeholder presentation. Although R is an excellent data analysis and visualization tool, there are several organizations that choose to use other programming languages to analyze and visualize data. In the next section, I will show how to complete the previous two phases using Python and Jupyter Lab.\n",
   "wordCount" : "1373",
   "inLanguage": "en",
-  "image":"https://eangutierrez.github.io/blog/part6/r_table_9.png","datePublished": "0001-01-01T00:00:00Z",
+  "image":"https://eangutierrez.github.io/portfolio/images/r_table_9.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -197,7 +197,10 @@ May 2023
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="lazy" src="https://eangutierrez.github.io/blog/part6/r_table_9.png" alt="">
+<figure class="entry-cover">
+        <img loading="lazy" srcset="https://eangutierrez.github.io/portfolio/blog/part6/images/r_table_9_hued2d801621df8a64492a64065a6c785c_105471_360x0_resize_box_3.png 360w ,https://eangutierrez.github.io/portfolio/blog/part6/images/r_table_9_hued2d801621df8a64492a64065a6c785c_105471_480x0_resize_box_3.png 480w ,https://eangutierrez.github.io/portfolio/blog/part6/images/r_table_9.png 515w" 
+            sizes="(min-width: 768px) 720px, 100vw" src="https://eangutierrez.github.io/portfolio/blog/part6/images/r_table_9.png" alt="" 
+            width="515" height="519">
         
 </figure><div class="toc">
     <details >
@@ -238,11 +241,11 @@ May 2023
 
   <div class="post-content"><h1 id="build-rstudio-data-frame">Build RStudio Data Frame<a hidden class="anchor" aria-hidden="true" href="#build-rstudio-data-frame">#</a></h1>
 <p>In this section, we will carry out the previous data pre-processing and data analysis steps using a more practical tool called the R programming language. First, it is important to note that we went back to the raw, unprocessed data. We will run a code script to load all 12 CSV files into one R data frame.</p>
-<p><img loading="lazy" src="/blog/part6/r_table_1.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_1.png" alt="R Script"  />
 </p>
 <h1 id="preprocess-data-in-r">Preprocess Data in R<a hidden class="anchor" aria-hidden="true" href="#preprocess-data-in-r">#</a></h1>
 <p>Once the data frame contains all 20222 bike rental records, we ran the following script to tidy the data and prepare it for analysis</p>
-<p><img loading="lazy" src="/blog/part6/r_table_2.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_2.png" alt="R Script"  />
 </p>
 <h1 id="benefits-of-r">Benefits of R<a hidden class="anchor" aria-hidden="true" href="#benefits-of-r">#</a></h1>
 <p>R is much faster than SQL because it loads the data on RAM instead of a hard disk. That means that we can add a column for the day of the week the ride took place, and the ride duration in minutes without losing performance.</p>
@@ -250,19 +253,19 @@ May 2023
 <h1 id="data-visualizations-in-r">Data Visualizations in R<a hidden class="anchor" aria-hidden="true" href="#data-visualizations-in-r">#</a></h1>
 <p>One of the most powerful aspects of R is that we can create powerful visualizations to convey useful facts about our data. It’s hard for people to understand the scale of our data, or discern key variables from looking at pivot tables. However, we can use that information to build striking visualizations that highlight what truly matters. For example, it can be intimidating to look at table seven, where we broke down the number of rides per user type per month. Which months have the highest number of rides? Are there seasons where the users choose other methods of transportation? And what type of users use the bikes more each month? Our pivot table has all of that information, but it is hard for management to find the answer. Let’s use that data to create a visualization that answers these questions.</p>
 <h1 id="number-of-rides-for-2022-per-user-group">Number of Rides for 2022 per User Group<a hidden class="anchor" aria-hidden="true" href="#number-of-rides-for-2022-per-user-group">#</a></h1>
-<p><img loading="lazy" src="/blog/part6/r_table_3.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_3.png" alt="R Script"  />
 </p>
 <p>This is a powerful visualization because it easily shows answers to our questions. First, a big portion of our users rent bikes from May through October. This makes sense because we know that Chicago has wonderful climate on those months. Second, it seems that the usage rate of our bikes dramatically decreases on January, February, and December. It’s important to point out that our member users, in green, continue to ride at a higher rate than the casual users, in red. Third, the member users outperform the casual users throughout the entire year. The data shows that the member users rent the bikes more, so there is an incentive for Cyclistic to apply marketing strategies to convert casual users to member users, especially during peak riding season, to convert casual users to members and maximize profit.</p>
 <h1 id="ride-distribution-over-two-categories">Ride Distribution Over Two Categories<a hidden class="anchor" aria-hidden="true" href="#ride-distribution-over-two-categories">#</a></h1>
 <p>Another powerful visualization is a variable tree that shows the data frame nested into subsets. Variable trees are useful to identify patterns in our data. Using the type of user on the first layer, our data is nested into two subsets: the casual user and the member user. This layer shows that 60% of our users are subscribers, and 40% of the users are casual users. Adding the type of bike as a second layer creates additional subsets. Of the member users, 66% use classic bikes, and 34% use electric bikes. Additionally, of the casual users, 51 % use classic bikes, 39% use electric bikes, and 10% use docked bikes. As we are dealing with a business case, we cannot raise concerns to our client, but in the real world, we should discuss with our clients whether the docked bike type should be changed to another type of bike, or whether it should be filtered from our analysis.</p>
-<p><img loading="lazy" src="/blog/part6/r_table_4.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_4.png" alt="R Script"  />
 </p>
 <p>We can draw two conclusions from this visualization:</p>
 <p>· Member users do not use docked bikes.</p>
 <p>· Both casual and member users prefer classic bikes.</p>
 <h1 id="distribution-of-rides-per-minute">Distribution of Rides per Minute<a hidden class="anchor" aria-hidden="true" href="#distribution-of-rides-per-minute">#</a></h1>
 <p>We can also build a histogram to look at the frequency distribution of bike rides per ride length:</p>
-<p><img loading="lazy" src="/blog/part6/r_table_5.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_5.png" alt="R Script"  />
 </p>
 <p>We can draw two conclusions from this visualization:</p>
 <p>· The vast majority of the rides have a ride length of less than 10 minutes.</p>
@@ -270,7 +273,7 @@ May 2023
 <p>Because the majority of rides have a ride length of less than 10 minutes, it could mean that the bikes are rented with a specific objective in mind, such as commuting to work, or getting groceries, instead of riding for leisure.</p>
 <h1 id="number-of-rides-per-day-of-the-week">Number of Rides per Day of the Week<a hidden class="anchor" aria-hidden="true" href="#number-of-rides-per-day-of-the-week">#</a></h1>
 <p>We can also build a bar graph that divides the rides per day of the week to find additional user preferences:</p>
-<p><img loading="lazy" src="/blog/part6/r_table_6.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_6.png" alt="R Script"  />
 </p>
 <p>We can draw two conclusions from this visualization:</p>
 <p>· Member users use bikes throughout the entire week, but there is a decrease in use on weekends.</p>
@@ -278,7 +281,7 @@ May 2023
 <p>Because there is an increase of casual users on weekends, Cyclistic Bike-Share could capitalize by running marketing promotions to target user conversion and promote user growth.</p>
 <h1 id="number-of-rides-per-hour-of-the-day">Number of Rides per Hour of the Day<a hidden class="anchor" aria-hidden="true" href="#number-of-rides-per-hour-of-the-day">#</a></h1>
 <p>We can also build a heat map that looks at the day of the week and the hour of the day to find the times our users prefer to ride bikes:</p>
-<p><img loading="lazy" src="/blog/part6/r_table_7.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_7.png" alt="R Script"  />
 </p>
 <p>We can draw several conclusions from this visualization:</p>
 <p>· From Tuesday through Friday, the most popular use of bikes is for commutes from 6:00 am to 8:00 am, and from 4:00 pm to 6:00 pm.</p>
@@ -287,16 +290,16 @@ May 2023
 <p>Knowing the most popular times of use is very useful for the marketing team. Cyclistic Bike-Share could capitalize by running marketing promotions to offer discounts in non-popular hours to promote bike usage, or increase the prices during popular hours if bike demand overtakes supply.</p>
 <h1 id="build-pie-charts-if-requested">Build Pie Charts if Requested<a hidden class="anchor" aria-hidden="true" href="#build-pie-charts-if-requested">#</a></h1>
 <p>We can also build visualizations that compare usage among groups of users. Although there are better ways to visualize this information, some clients may prefer pie charts, and the team built this to be prepared in this case:</p>
-<p><img loading="lazy" src="/blog/part6/r_table_8.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_8.png" alt="R Script"  />
 </p>
 <p>We can draw two conclusions from this visualization:</p>
 <p>· Both casual and member users rent bikes mainly on weekdays.</p>
 <p>· Casual users use bikes on weekends at a higher rate than member users.</p>
 <h1 id="build-maps-showing-popular-routes">Build Maps Showing Popular Routes<a hidden class="anchor" aria-hidden="true" href="#build-maps-showing-popular-routes">#</a></h1>
 <p>Finally, we can create a visualization of a map that contains the most popular routes by both member and casual users:</p>
-<p><img loading="lazy" src="/blog/part6/r_table_9.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_9.png" alt="R Script"  />
 </p>
-<p><img loading="lazy" src="/blog/part6/r_table_10.png" alt="R Script"  />
+<p><img loading="lazy" src="images/r_table_10.png" alt="R Script"  />
 </p>
 <p>We can draw several conclusions from these visualization:</p>
 <p>· Member users are more spread throughout the area.</p>
